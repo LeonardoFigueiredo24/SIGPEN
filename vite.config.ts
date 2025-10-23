@@ -15,9 +15,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 🔹 ESSA LINHA GARANTE QUE AS ROTAS FUNCIONEM NO DEPLOY
   base: "/",
-  // 🔹 ESSA LINHA FAZ O BUILD FUNCIONAR EM QUALQUER AMBIENTE
   build: {
     outDir: "dist",
   },
